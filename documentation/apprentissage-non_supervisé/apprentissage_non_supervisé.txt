@@ -1,0 +1,11 @@
+clustering:
+    -from sklearn.cluster import Kmeans (on importe de quoi utiliser les kmeans clustering)
+        -model = Kmeans(n_clusters=n, n_init=n, max_iter=n, init=type) (on effectue un modèle de Kmeans clusstering avec un nombre de cluster de n un nombre d'initialisation de n d'un certain type et une iteration maximal de n)
+        -cluster_centers_ (donne la position des centroid), Labels_ (équivalent de predict pour les X d'entrainement), Inertia_ (calcul de la fonction cout)
+anomaly detection:
+    -from sklearn.ensemble import IsolationForest (on importe de quoi utilisé l'isolation en foret)
+        -model = IsolatioForest(contamination=) (on créer un modèle qui va chercher les données isolé pour ca on lui donne le pourcentage de données à filtrer)
+dimension reduction:
+    -from sklearn.decomposition import PCA (on importe de quoi utiliser le PCA)
+        -model = PCA(n_components=n) (on fait un modèle qui va nous donner la dimension des données avec le nombre de composant n déterminer par rapport a la dimension d'étude)    -from sklearn.decomposition import PCA (on importe de quoi utiliser le PCA)
+        -model = PCA(n_components=n) (on fait un modèle qui va nous donner la dimension des données avec le nombre de composant n déterminer par rapport a la dimension d'étude)
