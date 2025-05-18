@@ -1,3 +1,24 @@
+APPRENTISSAGE NON SUPERVISÉ:
+
+L’apprentissage non supervisé est un type d’apprentissage automatique dans lequel on ne fournit que des données d’entrée X (sans étiquettes de sortie y) et le modèle doit découvrir par lui-même des structures, relations, groupes, règles, ou représentations cachées dans les données.
+
+Les éléments de base pour l'apprentissage non-supervisé sont:
+-les données(X): des vecteurs d’entrée x₁, x₂, ..., xₙ sans étiquettes
+-un modèle: fonction ou processus qui essaie de capturer la structure de X
+-un critère objectif: fonction à minimiser/maximiser pour trouver la meilleure structure
+-une représentation latente (z): espace caché représentant les patterns
+
+Il existe 4 objectif principaux que l'on peut effectuer à l'aide de l'apprentissage non-supervisé:
+-Clustering (regroupement):
+    Partitionner l’ensemble des points X = {x₁, ..., xₙ} en k groupes similaire
+-Réduction de dimension:
+    Trouver un espace latent de faible dimension tel que les x originaux puissent être approximés
+-Détection d’anomalies:
+    Trouver des points très différents du reste (selon une distance, une probabilité, ou une reconstruction faible)
+-Apprentissage génératif:
+    Modéliser la distribution de probabilité des données p(x) pour pouvoir générer de nouveaux échantillons x
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 clustering:
     -from sklearn.cluster import Kmeans (on importe de quoi utiliser les kmeans clustering)
         -model = Kmeans(n_clusters=n, n_init=n, max_iter=n, init=type) (on effectue un modèle de Kmeans clusstering avec un nombre de cluster de n un nombre d'initialisation de n d'un certain type et une iteration maximal de n)
@@ -7,5 +28,5 @@ anomaly detection:
         -model = IsolatioForest(contamination=) (on créer un modèle qui va chercher les données isolé pour ca on lui donne le pourcentage de données à filtrer)
 dimension reduction:
     -from sklearn.decomposition import PCA (on importe de quoi utiliser le PCA)
-        -model = PCA(n_components=n) (on fait un modèle qui va nous donner la dimension des données avec le nombre de composant n déterminer par rapport a la dimension d'étude)    -from sklearn.decomposition import PCA (on importe de quoi utiliser le PCA)
+        -model = PCA(n_components=n) (on fait un modèle qui va nous donner la dimension des données avec le nombre de composant n déterminer par rapport a la dimension d'étude)
         -model = PCA(n_components=n) (on fait un modèle qui va nous donner la dimension des données avec le nombre de composant n déterminer par rapport a la dimension d'étude)

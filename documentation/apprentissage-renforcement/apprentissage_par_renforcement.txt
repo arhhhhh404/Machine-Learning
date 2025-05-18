@@ -1,0 +1,31 @@
+APPRENTISSAGE PAR RENFORCEMENT:
+
+L'apprentissage par renforcement (RL) est une branche du machine learning ou un agent apprend à prendre des décisions en intéragissant avec un environnement dans le but de maximiser une récompense.
+
+Le cadre mathématique de base s’appelle un Processus de Décision Markovien (MDP). Il est défini par 5 éléments :
+-l'agent (A): le décideur qui apprend et agit
+-l'environnement(E): ce avec quoi l'agent intéragit
+-l'état (S): représente une situation dans l’environnement
+-l'action (a): une décision prise par l’agent à partir d’un état
+-la récompense (r): feedback numérique reçu après une action
+-la politique (π(a|s): la stratégie de décision de l’agent
+
+À chaque pas de temps t, le cycle est:
+1. L’agent est dans un état s_t
+2. Il choisit une action a_t
+3. L’environnement renvoie :
+    un nouvel état s_{t+1}
+    une récompense r_t
+Et cela continue jusqu’à un état terminal ou après un nombre d’étapes.
+
+L’agent cherche à maximiser la somme des récompenses attendues sur le long terme, c’est ce qu’on appelle le return. Il essaie donc d’apprendre une politique optimale π*
+
+Il existe deux grandes stratégie d'apprentissage:
+- Basés sur la valeur:
+    Q-Learning : apprendQ(s, a) directement
+    SARSA : version on-policy de Q-learning
+- Basés sur la politique:
+    gradient politique : apprend directement une politique πθ(a|s)
+    PPO, A2C, etc. (souvent utilisés avec des réseaux de neurones)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
