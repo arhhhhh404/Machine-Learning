@@ -1,3 +1,20 @@
+APPRENTISSAGE SUPERVISÉ:
+
+L’apprentissage supervisé est un type d’apprentissage automatique dans lequel on fournit au modèle des données d’entrée (X) accompagnées de leurs étiquettes de sortie (y). L’objectif est que le modèle apprenne à prédire la sortie y correspondante à une nouvelle entrée x, après avoir observé suffisamment d’exemples (x, y).
+
+Les éléments de base de l’apprentissage supervisé sont:
+-les données (X, y): une collection d’exemples (x1, y1), (x2, y2), ..., (xn, yn) où chaque xᵢ est un vecteur d’entrée et yᵢ est l’étiquette associée
+-un modèle: une fonction paramétrée (f) qui approxime la relation entre les entrées x et les sorties y
+-un critère de perte (loss): une fonction (L) qui mesure l’erreur entre la prédiction du modèle et la vraie sortie, que l’on cherche à minimiser
+-un algorithme d’optimisation: méthode qui ajuste les paramètres du modèle pour minimiser la perte sur les données d’entraînement
+
+Il existe 2 types principaux que l'on peut effectuer à l'aide de l'apprentissage supervisé:
+-Classification:
+    Prédire une catégorie parmi un ensemble fini
+-Régression:
+    Prédire une valeur numérique continue
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 base:
     -model = regression(...) (créer un objet avec un estimateur et ses hyperparamètre)
     -model.fit(X, y) (entraine le modèle sur les données X et y divisé donc en 2 tableau numpy avec X et y de dim=2)
