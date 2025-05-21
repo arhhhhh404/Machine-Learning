@@ -3,14 +3,14 @@ APPRENTISSAGE NON SUPERVISÉ:
 L’apprentissage non supervisé est un type d’apprentissage automatique dans lequel on ne fournit que des données d’entrée X (sans étiquettes de sortie y) et le modèle doit découvrir par lui-même des structures, relations, groupes, règles, ou représentations cachées dans les données.
 
 Les éléments de base pour l'apprentissage non-supervisé sont:
--les données(X): des vecteurs d’entrée x₁, x₂, ..., xₙ sans étiquettes
+-les données(X): des vecteurs d’entrée x1, x2, ..., xn sans étiquettes
 -un modèle: fonction ou processus qui essaie de capturer la structure de X
 -un critère objectif: fonction à minimiser/maximiser pour trouver la meilleure structure
 -une représentation latente (z): espace caché représentant les patterns
 
 Il existe 4 objectif principaux que l'on peut effectuer à l'aide de l'apprentissage non-supervisé:
 -Clustering (regroupement):
-    Partitionner l’ensemble des points X = {x₁, ..., xₙ} en k groupes similaire
+    Partitionner l’ensemble des points X = {x1, ..., xn} en k groupes similaire
 -Réduction de dimension:
     Trouver un espace latent de faible dimension tel que les x originaux puissent être approximés
 -Détection d’anomalies:
