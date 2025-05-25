@@ -22,10 +22,13 @@ L’agent cherche à maximiser la somme des récompenses attendues sur le long t
 
 Il existe deux grandes stratégie d'apprentissage:
 - Basés sur la valeur:
-    Q-Learning : apprendQ(s, a) directement
-    SARSA : version on-policy de Q-learning
+    Q-Learning (off-policy) : son but est d'apprendre d'apprendre un fonction qui estime la qualité d'une action dans un état sans prendre en compte de politique
+    SARSA (on-policy) : pareil que le Q-learning mais à la différence qu'il doit considérer une politique
 - Basés sur la politique:
     gradient politique : apprend directement une politique πθ(a|s)
     PPO, A2C, etc. (souvent utilisés avec des réseaux de neurones)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+basé sur la valeur:
+- Q-learning
+    
