@@ -10,6 +10,8 @@ Le cadre mathématique de base s’appelle un Processus de Décision Markovien (
 -la récompense (r): feedback numérique reçu après une action
 -la politique (π(a|s): la stratégie de décision de l’agent
 
+Il y a également une différence entre l'exploration et l'exploitation, l'exploration est l'aléatoire dans les actions et l'exploitation est la recherche du profit. On peut donc combiné les deux qui est l'algo d'epsilon greedy (80% d'exploration contre 20% d'exploitation) afin d'observer le rendu final
+
 À chaque pas de temps t, le cycle est:
 1. L’agent est dans un état s_t
 2. Il choisit une action a_t
