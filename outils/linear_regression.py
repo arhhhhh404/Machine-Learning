@@ -34,10 +34,7 @@ prediction = model(X, theta_final)
 plt.figure(figsize=(15, 10))
 plt.scatter(x, y)
 plt.plot(x, prediction, c="r")
-<<<<<<< HEAD
 plt.title("courbe de régression")
 plt.show()
-=======
 plt.title("courbe de régression linéaire")
 plt.show()
->>>>>>> d2bcad8 (commit8)
